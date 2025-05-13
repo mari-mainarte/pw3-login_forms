@@ -29,12 +29,10 @@ export class AppComponent {
   verificarSenha(passwdInput: string){
     if(this.tipoMsg == true){
       this.passwdVerificacao = passwdInput;
-      if(this.passwdVerificacao == this.passwd){
-        this.tipoMsg == true;
-      }else{
+      if(this.passwdVerificacao != this.passwd){
         this.tipoMsg = false;
       }
     }
-    this.exibeDiv = !this.exibeDiv;
+    this.exibeDiv = true;
   }
 }

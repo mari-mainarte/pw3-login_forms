@@ -1,9 +1,11 @@
-<form [formGroup]="loginForm" [hidden]="exibe">
-  <label for="user">Usuário </label>
-  <input id="user" type="text" formControlName="user">
-  <br>
-  <label for="passwd">Senha </label>
-  <input id="passwd" type="text" formControlName="passwd">
-  <br>
-  <button type="button" (click)="OnVerificar()">Autenticar</button>
-</form>
+<div id="login">
+  <form [formGroup]="loginForm" [hidden]="exibe">
+    <label for="user">Usuário </label>
+    <input id="user" type="text" formControlName="user">
+    <br>
+    <label for="passwd">Senha </label>
+    <input id="passwd" type="text" formControlName="passwd">
+    <br>
+    <button type="button" (click)="OnVerificar()">Autenticar</button>
+  </form>
+</div>
