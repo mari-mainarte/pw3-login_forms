@@ -15,7 +15,7 @@ export class AppComponent {
   userVerificacao : string = "";
   passwdVerificacao : string = "";
   tipoMsg : boolean = false;
-  exibeMsg: boolean = false;
+  exibeDiv: boolean = false;
 
   verificarUser(userInput: string){
     this.userVerificacao = userInput;
@@ -34,9 +34,7 @@ export class AppComponent {
       }else{
         this.tipoMsg = false;
       }
-    }else{
-      this.tipoMsg = false;
     }
-    this.exibeMsg = !this.exibeMsg;
+    this.exibeDiv = !this.exibeDiv;
   }
 }

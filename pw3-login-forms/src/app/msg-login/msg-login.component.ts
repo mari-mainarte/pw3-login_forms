@@ -9,4 +9,5 @@ import { Component, Input } from '@angular/core';
 export class MsgLoginComponent {
   @Input() exibeMsg = true;
   @Input() exibeDiv = false;
+  @Input() userName : string = "";
 }
